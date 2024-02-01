@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.mainbg{
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #61dafb;
+background-size: cover;
+height: 100vh;
+padding: 10px;
+}
+.mainh1{
+color: brown;
+font-size: 60px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: underline;
+}
+.subbg{
+background-color: aquamarine;
+border-radius: 60px;
+border-color: #282c34;
+border-width: 50px;
+margin-right: 250px;
+margin-left: 250px;
+}
+.count{
+font-size: 60px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 900;
+color: darkolivegreen;
+}
+.btns{
+
+}
+.btn1{
+margin: 20px;
+font-size: 20px;
+color: #282c34;
+background-color: bisque;
+border-width: 0px;
+height: 40px;
+border-radius: 10px;
+}
+.counter{
+  color: darkorange;
+}
+.btn11{
+  color: indigo;
+}
+.g7{
+  text-align: end;
+  padding: 10px;
+  color: aliceblue;
+}
