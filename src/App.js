@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+import {Component} from 'react'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+class App extends Component{
+  state = {count: 0}
+
+  onIncrement = () => {
+    this.setState((prevState) => {
+      return (
+        {count: prevState.count + 1}
+      )
+    })
+  }
+
+  onDecrement = () => {
+    this.setState((prevState) => {
+      return (
+        {count: prevState.count - 1}
+      )
+    })
+  }
+
+  onReset = () => {
+    this.setState({count: 0})
+  }
+
+  render(){
+    const {count} = this.state
+    return (
+      <div className='mainbg'>
+       <h1 className='mainh1'>
+        Counter App
+       </h1>
+       <div className='subbg'>
+        <p className='count'>
+          Count : <span className='counter'>{count}</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <div className='btns'>
+          <button className="btn1" onClick={this.onIncrement}>
+            Increase
+          </button>
+          <button className="btn1" onClick={this.onDecrement}>
+            Decrease
+          </button>
+        </div>
+        <button className='btn1 btn11' onClick={this.onReset}>Reset</button>
+       </div>
+       <p className='g7'>Grohith</p>
+      </div>
+    )
+  }
 }
+
 
 export default App;
